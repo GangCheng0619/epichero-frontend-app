@@ -27,5 +27,6 @@ code {
 }
 
 * {
+  overflow-wrap: anywhere !important;
   word-wrap: break-word;
 }
