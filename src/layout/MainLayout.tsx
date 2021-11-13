@@ -6,11 +6,11 @@ import Sidebar from './Sidebar'
 import Footer from './Footer'
 
 const StyledLayout = styled.div`
-height: 100vh;
   display: flex;
   background: no-repeat;
   background-image: url(https://storage.googleapis.com/epic-cdn/public/v1/bg-battle1.webp);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-attachment: fixed;
 `
 
 const ContentDiv = styled.div`

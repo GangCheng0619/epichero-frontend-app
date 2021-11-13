@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const RoadMapTitleDiv = styled.div`
     text-align: center;
     font-weight:700;
