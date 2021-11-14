@@ -7,7 +7,6 @@ import HeroStatsWallet from 'components/customs/herostatswallet/HeroStatsWallet'
 
 const RoadMapPart = styled.div`
 width: 100%;
-padding-top: 50px;
 `;
 
 const PhaseCardPart = styled.div`
@@ -15,12 +14,16 @@ const PhaseCardPart = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
-  padding: 50px;
   width: 100%;
 `;
 
+export const ChestDiv = styled.div`
+  width: 80%;
+  margin: auto;
+`
+
 const Chest = () => {
-  return <div>
+  return <ChestDiv>
     <SlideShow />
     <HeroStatsWallet />
     <RoadMapPart>
@@ -31,7 +34,7 @@ const Chest = () => {
         <PhaseCard />
       </PhaseCardPart>
     </RoadMapPart>
-  </div>
+  </ChestDiv>
 }
 
 export default Chest

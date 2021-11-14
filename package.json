@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
+    "@styled-system/theme-get": "^5.1.2",
     "@types/chart.js": "^2.9.34",
     "@types/enzyme": "3.10.4",
     "@types/jest": "27.0.0",
@@ -75,6 +76,7 @@
   "devDependencies": {
     "@types/react": "^17.0.34",
     "@types/react-table": "^7.7.3",
-    "@types/styled-components": "^5.1.14"
+    "@types/styled-components": "^5.1.14",
+    "@types/styled-system__theme-get": "^5.0.2"
   }
 }

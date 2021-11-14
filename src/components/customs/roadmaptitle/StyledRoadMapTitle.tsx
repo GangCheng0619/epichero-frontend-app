@@ -7,4 +7,5 @@ export const RoadMapTitleDiv = styled.div`
     line-height:3.75rem;
     letter-spacing: -.00833em;
     color: #fff;
+    margin-bottom: 50px;
 `

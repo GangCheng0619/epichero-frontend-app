@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const SlideShowDiv = styled.div`
-    padding: 50px;
     padding-bottom: 0;
-    width: calc(100vw - 270px);
+    width: calc(80vw - 210px);
     border-radius: 8px;
     div {
         background: white;
