@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text } from '../text'
-import { EpicHeroDiv, HeroStatsLine, HeroStatsLineItem, HeroStatsTitle, HeroStatsWalletDiv, YourWalletDiv } from './StyledHeroStatsWallet'
+import { EpicHeroDiv, HeroStatsLine, HeroStatsLineItem, HeroStatsTitle, HeroStatsWalletDiv, WalletHeroBuyBtn, WalletRefferalCopnyBtn, WalletRefferalDiv, WalletRefferalEditItem, WalletThoreumBtn, YourWalletDiv } from './StyledHeroStatsWallet'
 
 const HeroStatsWallet = () => {
     return (
@@ -32,8 +32,8 @@ const HeroStatsWallet = () => {
                         <Text mode="span" fSize={20} fWeight={500} lHeight={32} tSpacing={0.2}>Total Genesis Hero Sold</Text>
                     </HeroStatsLineItem>
                     <HeroStatsLineItem>
-                    <Text mode="span" fSize={20} fWeight={500} lHeight={32} tSpacing={0.2} fColor="#ea8f08">18180/18500
-                    </Text>
+                        <Text mode="span" fSize={20} fWeight={500} lHeight={32} tSpacing={0.2} fColor="#ea8f08">18180/18500
+                        </Text>
                     </HeroStatsLineItem>
                 </HeroStatsLine>
                 <HeroStatsLine>
@@ -41,7 +41,7 @@ const HeroStatsWallet = () => {
                         <Text mode="span" fSize={20} fWeight={500} lHeight={32} tSpacing={0.2}>Total Genesis Hero Born</Text>
                     </HeroStatsLineItem>
                     <HeroStatsLineItem>
-                    <Text mode="span" fSize={20} fWeight={500} lHeight={32} tSpacing={0.2} fColor="#ea8f08">16,944</Text>
+                        <Text mode="span" fSize={20} fWeight={500} lHeight={32} tSpacing={0.2} fColor="#ea8f08">16,944</Text>
                     </HeroStatsLineItem>
                 </HeroStatsLine>
                 <HeroStatsLine>
@@ -54,37 +54,40 @@ const HeroStatsWallet = () => {
                 </HeroStatsLine>
             </EpicHeroDiv>
             <YourWalletDiv>
-            <HeroStatsTitle>
+                <HeroStatsTitle>
                     <Text mode="span" fSize={24} fWeight={700} lHeight={32} tSpacing={0}>Your Wallet</Text>
                 </HeroStatsTitle>
                 <HeroStatsLine>
                     <HeroStatsLineItem>
-                        <Text mode="span" fSize={20} fWeight={500} lHeight={32} tSpacing={0.2}>EPICHERO </Text>
-                        <Text mode="span" fSize={20} fWeight={500} lHeight={32} tSpacing={0.2}>Text</Text>
+                        <Text mode="span" fSize={20} fWeight={500} lHeight={32} tSpacing={0.2}>EPICHERO  </Text>
+                        <Text mode="span" fSize={24} fWeight={400} lHeight={32} tSpacing={0.2}>0 </Text>
+                        <Text mode="span" fSize={20} fWeight={500} lHeight={32} tSpacing={0.2}>($0)</Text>
                     </HeroStatsLineItem>
                     <HeroStatsLineItem>
-                        s
+                        <WalletHeroBuyBtn>Buy</WalletHeroBuyBtn>
                     </HeroStatsLineItem>
                 </HeroStatsLine>
                 <HeroStatsLine>
                     <HeroStatsLineItem>
-                        <Text mode="span" fSize={20} fWeight={500} lHeight={32} tSpacing={0.2}>THOREUM </Text>
-                        <Text mode="span" fSize={20} fWeight={500} lHeight={32} tSpacing={0.2}>Text</Text>
+                        <Text mode="span" fSize={20} fWeight={500} lHeight={32} tSpacing={0.2}>THOREUM  </Text>
+                        <Text mode="span" fSize={24} fWeight={500} lHeight={32} tSpacing={0.2}>0 </Text>
+                        <Text mode="span" fSize={20} fWeight={500} lHeight={32} tSpacing={0.2}>($0)</Text>
                     </HeroStatsLineItem>
                     <HeroStatsLineItem>
-                        s
+                        <WalletThoreumBtn>Buy</WalletThoreumBtn>
                     </HeroStatsLineItem>
                 </HeroStatsLine>
                 <HeroStatsLine>
-                        <Text mode="span" fSize={24} fWeight={700} lHeight={32} tSpacing={0.2}>Referral</Text>
+                    <Text mode="span" fSize={24} fWeight={700} lHeight={32} tSpacing={0.2}>Referral</Text>
                 </HeroStatsLine>
                 <HeroStatsLine>
-                    Button
-                    <HeroStatsLineItem>
-                    <Text mode="span" fSize={20} fWeight={500} lHeight={32} tSpacing={0.2} fColor="#ea8f08">Button</Text>
-                    </HeroStatsLineItem>
-                    <Text mode="span" fSize={16} fWeight={500} lHeight={1.8} tSpacing={0.2}>Refer friends to earn 2% their income View referrals report</Text>
+                    <WalletRefferalDiv>
+                        <WalletRefferalEditItem />
+                        <WalletRefferalCopnyBtn>Copy</WalletRefferalCopnyBtn>
+                    </WalletRefferalDiv>
+                    
                 </HeroStatsLine>
+                <Text fSize={16} fWeight={500} lHeight={1.8} tSpacing={0.2}>Refer friends to earn 2% their income View referrals report</Text>
             </YourWalletDiv>
         </HeroStatsWalletDiv>
     )

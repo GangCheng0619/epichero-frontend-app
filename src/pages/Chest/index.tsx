@@ -4,6 +4,7 @@ import RoadMapTitle from 'components/customs/roadmaptitle/RoadMapTitle';
 import styled from 'styled-components'
 import SlideShow from 'components/customs/slideshow/SlideShow';
 import HeroStatsWallet from 'components/customs/herostatswallet/HeroStatsWallet';
+// import Mysterious from 'components/customs/mysterious/Mysterious';
 
 const RoadMapPart = styled.div`
 width: 100%;
@@ -26,6 +27,7 @@ const Chest = () => {
   return <ChestDiv>
     <SlideShow />
     <HeroStatsWallet />
+    {/* <Mysterious /> */}
     <RoadMapPart>
       <RoadMapTitle/>
       <PhaseCardPart>
