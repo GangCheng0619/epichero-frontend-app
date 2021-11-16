@@ -2,6 +2,7 @@ import React, { Suspense } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 // @import Layout
 import MainLayout from 'layout/MainLayout'
+
 // @import Pages
 import Chest from 'pages/Chest'
 import Market from 'pages/Market'
