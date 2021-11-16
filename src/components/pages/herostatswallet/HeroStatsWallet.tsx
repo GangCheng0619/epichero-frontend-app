@@ -1,3 +1,4 @@
+import AnimBtn from 'components/customs/animButton/AnimBtn'
 import React from 'react'
 import { Text } from '../../customs/text'
 import {
@@ -6,11 +7,10 @@ import {
   HeroStatsLineItem,
   HeroStatsTitle,
   HeroStatsWalletDiv,
-  WalletHeroBuyBtn,
   WalletRefferalCopnyBtn,
   WalletRefferalDiv,
   WalletRefferalEditItem,
-  WalletThoreumBtn,
+  WalletRefferalTextLine,
   YourWalletDiv,
 } from './StyledHeroStatsWallet'
 
@@ -204,7 +204,19 @@ const HeroStatsWallet = () => {
             </Text>
           </HeroStatsLineItem>
           <HeroStatsLineItem>
-            <WalletHeroBuyBtn>Buy</WalletHeroBuyBtn>
+            <AnimBtn
+              label={
+                <>
+                  <img
+                    src="https://storage.googleapis.com/epic-cdn/public/v1/logo.webp"
+                    width="34px"
+                    height="34px"
+                    alt="coin"
+                  />
+                  Buy
+                </>
+              }
+            />
           </HeroStatsLineItem>
         </HeroStatsLine>
         <HeroStatsLine>
@@ -238,7 +250,19 @@ const HeroStatsWallet = () => {
             </Text>
           </HeroStatsLineItem>
           <HeroStatsLineItem>
-            <WalletThoreumBtn>Buy</WalletThoreumBtn>
+            <AnimBtn
+              label={
+                <>
+                  <img
+                    src="https://storage.googleapis.com/epic-cdn/public/coins/THOREUM.webp"
+                    width="34px"
+                    height="34px"
+                    alt="coin"
+                  />
+                  Buy
+                </>
+              }
+            />
           </HeroStatsLineItem>
         </HeroStatsLine>
         <HeroStatsLine>
@@ -258,9 +282,20 @@ const HeroStatsWallet = () => {
             <WalletRefferalCopnyBtn>Copy</WalletRefferalCopnyBtn>
           </WalletRefferalDiv>
         </HeroStatsLine>
-        <Text fSize={16} fWeight={500} lHeight={1.8} tSpacing={0.2}>
-          Refer friends to earn 2% their income View referrals report
-        </Text>
+        <WalletRefferalTextLine>
+          <Text fSize={16} fWeight={500} lHeight={1.8} tSpacing={0.2}>
+            Refer friends to earn 2% their income
+          </Text>
+          <Text
+            fSize={16}
+            fWeight={500}
+            lHeight={1.8}
+            tSpacing={0.2}
+            fColor="#ea8f08"
+          >
+            View referrals report
+          </Text>
+        </WalletRefferalTextLine>
       </YourWalletDiv>
     </HeroStatsWalletDiv>
   )

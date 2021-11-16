@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
 export const ROICalcBtnDiv = styled.a`
+display: flex;
+    img {
+        margin-right: 10px;
+    }
     position: relative;
     text-align: center;
     font-family: Tahoma,Arial;

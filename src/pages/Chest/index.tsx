@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import SlideShow from 'components/pages/slideshow/SlideShow'
 import HeroStatsWallet from 'components/pages/herostatswallet/HeroStatsWallet'
 import ConnectWallet from 'components/pages/connectwallet/ConnectWallet'
-// import Mysterious from 'components/pages/mysterious/Mysterious';
+import Mysterious from 'components/pages/mysterious/Mysterious'
 
 const RoadMapPart = styled.div`
   width: 100%;
@@ -31,7 +31,7 @@ const Chest = () => {
       <SlideShow />
       <HeroStatsWallet />
       <ConnectWallet />
-      {/* <Mysterious /> */}
+      <Mysterious />
       <RoadMapPart>
         <RoadMapTitle />
         <PhaseCardPart>
