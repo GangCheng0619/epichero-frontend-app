@@ -7,7 +7,6 @@ import MainLayout from 'layout/MainLayout'
 import Chest from 'pages/Chest'
 import Market from 'pages/Market'
 // @import Style
-// import styled from 'styled-components'
 
 const App: React.FC = () => {
   return (
