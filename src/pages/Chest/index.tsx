@@ -6,9 +6,12 @@ import SlideShow from 'components/pages/slideshow/SlideShow'
 import HeroStatsWallet from 'components/pages/herostatswallet/HeroStatsWallet'
 import ConnectWallet from 'components/pages/connectwallet/ConnectWallet'
 import Mysterious from 'components/pages/mysterious/Mysterious'
+import SafeMoonNft from 'components/pages/safemoonnft/SafeMoonNft'
 
 const RoadMapPart = styled.div`
+  max-width: 1000px;
   width: 100%;
+  margin: auto;
 `
 
 const PhaseCardPart = styled.div`
@@ -20,9 +23,7 @@ const PhaseCardPart = styled.div`
 `
 
 export const ChestDiv = styled.div`
-  max-width: 1000px;
   width: 100%;
-  margin: auto;
 `
 
 const Chest = () => {
@@ -32,6 +33,7 @@ const Chest = () => {
       <HeroStatsWallet />
       <ConnectWallet />
       <Mysterious />
+      <SafeMoonNft />
       <RoadMapPart>
         <RoadMapTitle />
         <PhaseCardPart>

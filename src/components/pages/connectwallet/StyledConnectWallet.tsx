@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const ConnectWalletDiv = styled.div`
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;

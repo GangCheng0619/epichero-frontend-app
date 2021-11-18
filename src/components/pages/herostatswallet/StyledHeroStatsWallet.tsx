@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const HeroStatsWalletDiv = styled.div`
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: auto;
